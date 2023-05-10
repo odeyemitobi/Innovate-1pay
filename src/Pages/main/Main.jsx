@@ -6,11 +6,25 @@ import {
   MdOutlineTrendingDown,
   MdOutlineTrendingUp,
 } from "react-icons/md";
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs"
 import { FcComboChart } from "react-icons/fc";
 import { AiOutlineSafety } from "react-icons/ai";
 import Slidereact from "../sub/Slidereact";
+import Contact from "../sub/Contact";
+import Custom from "../sub/Custom";
+import Real from "../sub/Real";
+import Pricing from "../sub/Pricing";
 
 function Main() {
+
+  const scrollLeft = () => {
+    document.getElementById("content").scrollLeft -= 600;
+  }
+
+  const scrollRight = () => {
+    document.getElementById("content").scrollLeft += 600;
+  }
+
   return (
     <MainLayout>
       <div className="pt-[7rem]">
@@ -26,7 +40,7 @@ function Main() {
               <StartedBtn>Get Started</StartedBtn>
             </div>
             <div className="pt-[5rem]">
-              <div className="rounded-full bg-blue-900 px-[40px] py-[40px]">
+              <div className="rounded-full cursor-pointer bg-blue-900 px-[40px] py-[40px]">
                 <div className="flex">
                   <div className=" border-r-2 px-16">
                     <p className="text-2xl leading-[3rem]">$USD</p>
@@ -116,14 +130,39 @@ function Main() {
             </div>
           </div>
         </div>
-        <div className="pt-[12rem] pb-[4rem] bg-[#f0f8ff]">
+        <div className="pt-[12rem] pb-[14rem] bg-[#f0f8ff]">
           <div className="px-[18rem]">
-            <div className="text-center">
-              <h1 className="text-3xl font-semibold">BENEFITS FOR YOUR BUSINESS</h1>
+            <div className="text-center flex justify-between">
+              <BsArrowLeft className=" cursor-pointer" onClick={scrollLeft} size={40} color="black" />
+              <h1 className="text-3xl font-semibold">
+                BENEFITS FOR YOUR BUSINESS
+              </h1>
+              <BsArrowRight className=" cursor-pointer" onClick={scrollRight} size={40} color="black" />
             </div>
-            <div>
-              <Slidereact/>
+            <div className="pt-[9rem]">
+              <div id="content" className="w-full flex items-center justify-start overflow-x-auto scroll-smooth scrollbar-hide ">
+                <div className="">
+                  <Slidereact />
+                </div>
+                <div>
+                  <Contact />
+                </div>
+                <div>
+                  <Custom />
+                </div>
+                <div>
+                  <Real />
+                </div>
+                <div>
+                  <Pricing />
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
+        <div className="map">
+          <div className="pt-5">
+            hello
           </div>
         </div>
       </div>

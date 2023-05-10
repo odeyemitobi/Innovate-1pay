@@ -1,26 +1,20 @@
 import React from "react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Note from "../../Assets/pic/note.jpg";
 
 function Slidereact() {
   return (
-    <div className="w-full flex justify-between">
-      <div className=" w-[30%] rounded-[10px] bg-white">
-        <div className="px-5 py-5">
+    <div className=" w-[20rem] mr-[4rem] justify-center rounded-3xl bg-white">
+      <div className="px-[2rem] pt-[2rem] pb-[4rem]">
+        <div className="">
           <img className="h-[7rem]" src={Note} alt="Note" />
-          <h1 className="">Banknotes Distribution</h1>
-          <p>
+        </div>
+        <div className="pt-5">
+          <h1 className="text-xl font-semibold">Banknotes Distribution</h1>
+          <p className=" w-[90%] text-lg pt-4 pb-5 font-thin">
             Streamlined solution for the distribution of foreign banknotes, for
-            businesses to manage foreign currency needs efficiently
+            businesses to manage foreign currency needs efficiently.
           </p>
         </div>
-      </div>
-      <div className=" w-[30%] rounded bg-white">
-        <img className="h-[3rem]" src={Note} alt="Note" />
-      </div>
-      <div className=" w-[30%] rounded bg-white">
-        <img className="h-[3rem]" src={Note} alt="Note" />
       </div>
     </div>
   );
