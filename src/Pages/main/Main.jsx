@@ -6,14 +6,25 @@ import {
   MdOutlineTrendingDown,
   MdOutlineTrendingUp,
 } from "react-icons/md";
-import { BsArrowLeft, BsArrowRight, BsCheck2Circle } from "react-icons/bs";
+import {
+  BsArrowLeft,
+  BsArrowRight,
+  BsCheck2Circle,
+  BsInstagram,
+} from "react-icons/bs";
 import { FcComboChart } from "react-icons/fc";
 import { AiOutlineSafety } from "react-icons/ai";
+import {
+  TiSocialFacebookCircular,
+  TiSocialLinkedinCircular,
+  TiSocialTwitterCircular,
+} from "react-icons/ti";
 import Slidereact from "../sub/Slidereact";
 import Contact from "../sub/Contact";
 import Custom from "../sub/Custom";
 import Real from "../sub/Real";
 import Pricing from "../sub/Pricing";
+import Ino from "../../Assets/img/Ino.svg";
 import Bill from "../../Assets/img/bills.jpg";
 import Cbn from "../../Assets/img/Central.png";
 import First from "../../Assets/img/firstbank.png";
@@ -64,7 +75,7 @@ function Main() {
             <div className="w-full flex pt-[4rem] justify-between">
               <div className="w-full text-center">
                 <div className="place-items-center grid">
-                  <MdOutlineRocketLaunch color="black" size={135} />
+                  <MdOutlineRocketLaunch color="red" size={135} />
                 </div>
                 <h1 className="pt-4 font-semibold text-xl">Effortless</h1>
                 <p className=" font-thin">
@@ -73,7 +84,7 @@ function Main() {
               </div>
               <div className="w-full text-center">
                 <div className="place-items-center grid">
-                  <FcComboChart color="black" size={135} />
+                  <FcComboChart color="" size={135} />
                 </div>
                 <h1 className="pt-4 font-semibold text-xl">Cost Efficient</h1>
                 <p className="font-thin">
@@ -82,7 +93,7 @@ function Main() {
               </div>
               <div className="w-full text-center">
                 <div className="place-items-center grid">
-                  <AiOutlineSafety color="black" size={135} />
+                  <AiOutlineSafety color="green" size={135} />
                 </div>
                 <h1 className="pt-4 font-semibold text-xl">Secure</h1>
                 <p className="font-thin">Strong tech partnerships</p>
@@ -242,24 +253,88 @@ function Main() {
               <h1 className="text-3xl font-semibold">OUR PARTNERS</h1>
             </div>
             <div className="w-full pt-5">
-              <div className="flex items-center">
-                <div>
-                  <img className="h-[5rem]" src={Cbn} alt="" />
+              <div className="flex justify-center ">
+                <div className="p-[2.5rem]">
+                  <img className="h-[4rem]" src={Cbn} alt="" />
                 </div>
-                <div>
-                  <img className="h-[5rem]" src={Cbn} alt="" />
+                <div className="p-[2.5rem]">
+                  <img className="h-[4rem]" src={First} alt="" />
                 </div>
-                <div>
-                  <img className="h-[5rem]" src={Cbn} alt="" />
+                <div className="p-[2.5rem]">
+                  <img className="h-[4rem]" src={Lian} alt="" />
                 </div>
-                <div>
-                  <img className="h-[5rem]" src={Cbn} alt="" />
+                <div className="p-[2.5rem]">
+                  <img className="h-[4rem]" src={Swg} alt="" />
                 </div>
-                <div>
-                  <img className="h-[5rem]" src={Cbn} alt="" />
+                <div className="p-[2.5rem]">
+                  <img className="h-[4rem]" src={Gtb} alt="" />
                 </div>
               </div>
-              <div></div>
+              <div className="flex justify-center ">
+                <div className="p-[2.5rem]">
+                  <img className="h-[4rem]" src={Swg} alt="" />
+                </div>
+                <div className="p-[2.5rem]">
+                  <img className="h-[4rem]" src={First} alt="" />
+                </div>
+                <div className="p-[2.5rem]">
+                  <img className="h-[4rem]" src={Lian} alt="" />
+                </div>
+                <div className="p-[2.5rem]">
+                  <img className="h-[4rem]" src={Cbn} alt="" />
+                </div>
+                <div className="p-[2.5rem]">
+                  <img className="h-[4rem]" src={Gtb} alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-full bg-blue-950">
+          <div className="py-[6rem] px-[18rem] flex justify-between">
+            <div className="">
+              <div className=" place-items-center grid">
+                <img className="h-[9rem]" src={Ino} alt="Ino" />
+              </div>
+              <div className="flex items-center">
+                <div className="px-2">
+                  <BsInstagram size={20} color="white" />
+                </div>
+                <div className="px-2">
+                  <TiSocialTwitterCircular size={29} color="white" />
+                </div>
+                <div className="px-2">
+                  <TiSocialFacebookCircular size={29} color="white" />
+                </div>
+                <div className="px-2">
+                  <TiSocialLinkedinCircular size={29} color="white" />
+                </div>
+              </div>
+            </div>
+            <div className="text-center text-white">
+              <h1 className="text-xl leading-[2.5rem] font-semibold">
+                Contacts
+              </h1>
+              <p className="text-xl pt-3 leading-[2.5rem]">+234 903 229 3077</p>
+              <p className="text-xl pt-3 leading-[2.5rem]">
+                info@innovate1pay.com
+              </p>
+              <p className="text-xl  pt-3">
+                No. 5, Onitsha Crescent, <br /> Garki, Abuja.
+              </p>
+            </div>
+            <div className="text-center text-white">
+              <p className="text-xl">Terms & Condition</p>
+              <p className="text-xl pt-3 leading-[2.5rem]">Policy</p>
+            </div>
+          </div>
+        </div>
+        <div className="border-t-2 bg-blue-950 border-[#9B9B9B]">
+          <div className="px-[18rem]">
+            <div className="text-center place-items-center grid h-[8vh]">
+              <h1 className="text-xl text-white">
+                @ copyright 2023 innovate1pay
+              </h1>
             </div>
           </div>
         </div>
