@@ -198,7 +198,7 @@ function Main() {
         <div className="map">
           <div className="py-[7rem] px-[28rem] flex justify-between">
             <div className="w-[30%] text-left place-items-center grid">
-              <h1 className="text-[4rem] font-medium">
+              <h1 className="text-[4rem]">
                 Holistic Foreign Exchange Solutions
               </h1>
             </div>
