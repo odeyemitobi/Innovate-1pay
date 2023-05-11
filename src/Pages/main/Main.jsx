@@ -45,15 +45,63 @@ function Main() {
     <MainLayout>
       <div className="pt-[7rem]">
         <div className="w-full home">
-          <div className="w-full px-[18rem] text-white pt-[11rem] place-items-center grid">
+          <div className="w-full xl:px-[18rem] text-white pt-[11rem] place-items-center grid">
             <div className="items-center text-center">
-              <h1 className=" text-[3rem]">Streamlined Solutions for</h1>
-              <p className="  text-[3.5rem] font-semibold">
+              <h1 className="text-sm md lg:text-3xl xl:text-5xl 2xl:text-5xl">Streamlined Solutions for</h1>
+              <p className=" text-sm lg:text-3xl xl:text-5xl 2xl:text-5xl pt-3 font-semibold">
                 Wholesale Distribution & Management <br /> of Foreign Banknotes
               </p>
             </div>
             <div className="pt-[8rem]">
               <StartedBtn>Get Started</StartedBtn>
+            </div>
+            <div className="pt-[5rem]">
+              <div className=" bg-blue-900 text-white py-8 px-12 flex rounded-full">
+                <div className="border-r-2 px-14">
+                  <div className="">
+                    <p className="text-sm xl:text-2xl">$USD</p>
+                  </div>
+                  <div className="pt-3 flex items-center">
+                    <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-xl xl:text-4xl 2xl:text-5xl font-semibold">430.00</h1>
+                    <div className="pl-3">
+                      <MdOutlineTrendingUp color="green" size={35} />
+                    </div>
+                  </div>
+                </div>
+                <div className="border-r-2 px-14">
+                  <div className="">
+                    <p className="text-sm xl:text-2xl">£GBP</p>
+                  </div>
+                  <div className="pt-3 flex items-center">
+                    <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-xl xl:text-4xl 2xl:text-5xl font-semibold">430.00</h1>
+                    <div className="pl-3">
+                      <MdOutlineTrendingDown color="red" size={35} />
+                    </div>
+                  </div>
+                </div>
+                <div className="border-r-2 px-14">
+                  <div className="">
+                    <p className="text-sm xl:text-2xl">€EUR</p>
+                  </div>
+                  <div className="pt-3 flex items-center">
+                    <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-xl xl:text-4xl 2xl:text-5xl font-semibold">430.00</h1>
+                    <div className="pl-3">
+                      <MdOutlineTrendingDown color="red" size={35} />
+                    </div>
+                  </div>
+                </div>
+                <div className="px-14">
+                  <div className="">
+                    <p className="text-sm xl:text-2xl">¥ YUAN</p>
+                  </div>
+                  <div className="pt-3 flex items-center">
+                    <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-xl xl:text-4xl 2xl:text-5xl font-semibold">430.00</h1>
+                    <div className="pl-3">
+                      <MdOutlineTrendingDown color="red" size={35} />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -150,7 +198,7 @@ function Main() {
         <div className="map">
           <div className="py-[7rem] px-[28rem] flex justify-between">
             <div className="w-[30%] text-left place-items-center grid">
-              <h1 className="text-[4rem]">
+              <h1 className="text-[4rem] font-medium">
                 Holistic Foreign Exchange Solutions
               </h1>
             </div>
