@@ -32,6 +32,38 @@ import Lian from "../../Assets/img/Lian.jpg";
 import Swg from "../../Assets/img/Sw.jpg";
 import Gtb from "../../Assets/img/gtbank.jpg";
 
+const services = [
+  {
+    id: 1,
+    smImage: <MdOutlineRocketLaunch color="red" size={100} />,
+    image: <MdOutlineRocketLaunch color="red" size={50} />,
+    title: "Effortless",
+    content: (
+      <span>
+        Quick procedures for both <br /> banked and unbanked clients
+      </span>
+    ),
+  },
+  {
+    id: 2,
+    smImage: <FcComboChart color="" size={100} />,
+    image: <FcComboChart color="" size={50} />,
+    title: "Cost Efficient",
+    content: (
+      <span>
+        Effective, money-saving <br /> service
+      </span>
+    ),
+  },
+  {
+    id: 3,
+    smImage: <AiOutlineSafety color="green" size={100} />,
+    image: <AiOutlineSafety color="green" size={50} />,
+    title: "Secure",
+    content: <span>Strong tech partnerships</span>,
+  },
+];
+
 function Main() {
   const scrollLeft = () => {
     document.getElementById("content").scrollLeft -= 600;
@@ -43,61 +75,135 @@ function Main() {
 
   return (
     <MainLayout>
-      <div className="pt-[7rem]">
+      <div className="">
         <div className="w-full home">
-          <div className="w-full xl:px-[18rem] text-white pt-[11rem] place-items-center grid">
+          <div className="w-full xl:px-[10rem] text-white pt-[11rem] place-items-center grid">
             <div className="items-center text-center">
-              <h1 className="text-sm md lg:text-3xl xl:text-5xl 2xl:text-5xl">Streamlined Solutions for</h1>
-              <p className=" text-sm lg:text-3xl xl:text-5xl 2xl:text-5xl pt-3 font-semibold">
+              <h1 className="sm:text-5xl text-3xl">
+                Streamlined Solutions for
+              </h1>
+              <p className=" sm:text-5xl text-3xl pt-3 font-semibold sm:leading-[4rem] leading-[2rem]">
                 Wholesale Distribution & Management <br /> of Foreign Banknotes
               </p>
             </div>
             <div className="pt-[8rem]">
               <StartedBtn>Get Started</StartedBtn>
             </div>
-            <div className="pt-[5rem]">
-              <div className=" bg-blue-900 text-white py-8 px-12 flex rounded-full">
-                <div className="border-r-2 px-14">
+            <div className="sm:block hidden pt-[5rem]">
+              <div className=" bg-blue-900 text-white sm:py-8 py-4 sm:px-12 px-6 grid grid-cols-4 rounded-full">
+                <div className="border-r-2 sm:px-14 px-4">
                   <div className="">
-                    <p className="text-sm xl:text-2xl">$USD</p>
+                    <p className="text-xs sm:text-2xl">$USD</p>
                   </div>
-                  <div className="pt-3 flex items-center">
-                    <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-xl xl:text-4xl 2xl:text-5xl font-semibold">430.00</h1>
+                  <div className="pt-2 sm:pt-3 flex items-center">
+                    <h1 className="text-md sm:text-2xl font-semibold">
+                      430.00
+                    </h1>
                     <div className="pl-3">
                       <MdOutlineTrendingUp color="green" size={35} />
                     </div>
                   </div>
                 </div>
-                <div className="border-r-2 px-14">
+                <div className="border-r-2 sm:px-14 px-4">
                   <div className="">
-                    <p className="text-sm xl:text-2xl">£GBP</p>
+                    <p className="text-xs sm:text-2xl">£GBP</p>
                   </div>
-                  <div className="pt-3 flex items-center">
-                    <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-xl xl:text-4xl 2xl:text-5xl font-semibold">430.00</h1>
+                  <div className="pt-2 sm:pt-3 flex items-center">
+                    <h1 className="text-md sm:text-2xl font-semibold">
+                      430.00
+                    </h1>
                     <div className="pl-3">
                       <MdOutlineTrendingDown color="red" size={35} />
                     </div>
                   </div>
                 </div>
-                <div className="border-r-2 px-14">
+                <div className="border-r-2 sm:px-14 px-4">
                   <div className="">
-                    <p className="text-sm xl:text-2xl">€EUR</p>
+                    <p className="text-xs sm:text-2xl">€EUR</p>
                   </div>
-                  <div className="pt-3 flex items-center">
-                    <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-xl xl:text-4xl 2xl:text-5xl font-semibold">430.00</h1>
+                  <div className="pt-2 sm:pt-3 flex items-center">
+                    <h1 className="text-md sm:text-2xl font-semibold">
+                      430.00
+                    </h1>
                     <div className="pl-3">
                       <MdOutlineTrendingDown color="red" size={35} />
                     </div>
                   </div>
                 </div>
-                <div className="px-14">
+                <div className="sm:px-14 px-4">
                   <div className="">
-                    <p className="text-sm xl:text-2xl">¥ YUAN</p>
+                    <p className="text-xs sm:text-2xl">¥ YUAN</p>
                   </div>
-                  <div className="pt-3 flex items-center">
-                    <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-xl xl:text-4xl 2xl:text-5xl font-semibold">430.00</h1>
+                  <div className="pt-2 sm:pt-3 flex items-center">
+                    <h1 className="text-md sm:text-2xl font-semibold">
+                      430.00
+                    </h1>
                     <div className="pl-3">
-                      <MdOutlineTrendingDown color="red" size={35} />
+                      <MdOutlineTrendingDown
+                        color="red"
+                        size={35}
+                        className={""}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="sm:hidden block pt-[5rem]">
+              <div className=" bg-blue-900 text-white py-10 sm:px-12 px-6 grid grid-cols-2 rounded-3xl">
+                <div className="border-r-2 sm:px-14 px-4">
+                  <div className="">
+                    <p className="text-xs sm:text-2xl">$USD</p>
+                  </div>
+                  <div className="pt-2 sm:pt-3 flex items-center">
+                    <h1 className="text-md sm:text-2xl font-semibold">
+                      430.00
+                    </h1>
+                    <div className="pl-3">
+                      <MdOutlineTrendingUp color="green" size={20} />
+                    </div>
+                  </div>
+                </div>
+                <div className="sm:px-14 px-4">
+                  <div className="">
+                    <p className="text-xs sm:text-2xl">£GBP</p>
+                  </div>
+                  <div className="pt-2 sm:pt-3 flex items-center">
+                    <h1 className="text-md sm:text-2xl font-semibold">
+                      430.00
+                    </h1>
+                    <div className="pl-3">
+                      <MdOutlineTrendingDown color="red" size={20} />
+                    </div>
+                  </div>
+                </div>
+                <div className="border-r-2 sm:px-14 px-4 mt-10">
+                  <div className="">
+                    <p className="text-xs sm:text-2xl">€EUR</p>
+                  </div>
+                  <div className="pt-2 sm:pt-3 flex items-center">
+                    <h1 className="text-md sm:text-2xl font-semibold">
+                      430.00
+                    </h1>
+                    <div className="pl-3">
+                      <MdOutlineTrendingDown color="red" size={20} />
+                    </div>
+                  </div>
+                </div>
+                <div className="sm:px-14 px-4 mt-10">
+                  <div className="">
+                    <p className="text-xs sm:text-2xl">¥ YUAN</p>
+                  </div>
+                  <div className="pt-2 sm:pt-3 flex items-center">
+                    <h1 className="text-md sm:text-2xl font-semibold">
+                      430.00
+                    </h1>
+                    <div className="pl-3">
+                      <MdOutlineTrendingDown
+                        color="red"
+                        size={20}
+                        className={""}
+                      />
                     </div>
                   </div>
                 </div>
@@ -106,9 +212,9 @@ function Main() {
           </div>
         </div>
         <div className="pt-[9rem]">
-          <div className="bg-blue-900 px-[18rem]">
-            <div className=" place-items-center text-center grid h-[40vh]">
-              <p className="text-[3rem] text-white ">
+          <div className="bg-blue-900">
+            <div className="place-items-center text-center grid h-[40vh]">
+              <p className="sm:text-[3rem] text-white text-xl">
                 Your business and institutional needs <br /> are made easy with
                 Innovate1pay
               </p>
@@ -116,62 +222,75 @@ function Main() {
           </div>
         </div>
         <div className="pt-[9rem] bg-neutral-100">
-          <div className="px-[18rem]">
+          <div className="">
             <div className="text-center">
-              <h1 className="text-3xl font-semibold">OUR SERVICES ARE</h1>
+              <h1 className="sm:text-3xl text-xl font-semibold">
+                OUR SERVICES ARE
+              </h1>
             </div>
             <div className="w-full flex pt-[4rem] justify-between">
-              <div className="w-full text-center">
-                <div className="place-items-center grid">
-                  <MdOutlineRocketLaunch color="red" size={135} />
+              {services?.map((service) => (
+                <div key={service.id} className="w-full text-center flex flex-col items-center">
+                  <div className="place-items-center grid sm:block hidden">
+                    {service.smImage}
+                  </div>
+                  <div className="place-items-center grid sm:hidden block">
+                    {service.image}
+                  </div>
+                  <h1 className="pt-4 font-semibold sm:text-xl text-md">
+                    {service.title}
+                  </h1>
+                  <p className="font-thin sm:text-base text-xs">
+                    {service.content}
+                  </p>
                 </div>
-                <h1 className="pt-4 font-semibold text-xl">Effortless</h1>
-                <p className=" font-thin">
-                  Quick procedures for both <br /> banked and unbanked clients
-                </p>
-              </div>
-              <div className="w-full text-center">
-                <div className="place-items-center grid">
-                  <FcComboChart color="" size={135} />
-                </div>
-                <h1 className="pt-4 font-semibold text-xl">Cost Efficient</h1>
-                <p className="font-thin">
-                  Effective, money-saving <br /> service
-                </p>
-              </div>
-              <div className="w-full text-center">
-                <div className="place-items-center grid">
-                  <AiOutlineSafety color="green" size={135} />
-                </div>
-                <h1 className="pt-4 font-semibold text-xl">Secure</h1>
-                <p className="font-thin">Strong tech partnerships</p>
-              </div>
+              ))}
             </div>
-            <div className="text-center pt-[12rem] pb-[8rem]">
+            <div className="text-center sm:pt-[12rem] pt-[8rem] pb-[8rem]">
               <StartedBtn>Get Started</StartedBtn>
             </div>
           </div>
         </div>
-        <div className="pt-[12rem] pb-[14rem] bg-[#f0f8ff]">
-          <div className="px-[18rem]">
-            <div className="text-center flex justify-between">
-              <BsArrowLeft
-                className=" cursor-pointer"
-                onClick={scrollLeft}
-                size={40}
-                color="black"
-              />
-              <h1 className="text-3xl font-semibold">
+        <div className="sm:pt-[12rem] pt-[8rem] sm:pb-[14rem] pb-[10rem] bg-[#f0f8ff]">
+          <div className="">
+            <div className="text-center flex justify-between items-center">
+              <div className="sm:block hidden">
+                <BsArrowLeft
+                  className="cursor-pointer"
+                  onClick={scrollLeft}
+                  size={40}
+                  color="black"
+                />
+              </div>
+              <div className="sm:hidden block">
+                <BsArrowLeft
+                  className=" cursor-pointer"
+                  onClick={scrollLeft}
+                  size={30}
+                  color="black"
+                />
+              </div>
+              <h1 className="sm:text-3xl text-xl font-semibold">
                 BENEFITS FOR YOUR BUSINESS
               </h1>
-              <BsArrowRight
-                className=" cursor-pointer"
-                onClick={scrollRight}
-                size={40}
-                color="black"
-              />
+              <div className="sm:block hidden">
+                <BsArrowRight
+                  className=" cursor-pointer"
+                  onClick={scrollRight}
+                  size={40}
+                  color="black"
+                />
+              </div>
+              <div className="sm:hidden block">
+                <BsArrowRight
+                  className=" cursor-pointer"
+                  onClick={scrollRight}
+                  size={30}
+                  color="black"
+                />
+              </div>
             </div>
-            <div className="pt-[9rem]">
+            <div className="sm:pt-[9rem] pt-[5rem]">
               <div
                 id="content"
                 className="w-full flex items-center justify-start overflow-x-auto scroll-smooth scrollbar-hide "
@@ -196,7 +315,7 @@ function Main() {
           </div>
         </div>
         <div className="map">
-          <div className="py-[7rem] px-[28rem] flex justify-between">
+          <div className="py-[7rem] flex justify-between">
             <div className="w-[30%] text-left place-items-center grid">
               <h1 className="text-[4rem]">
                 Holistic Foreign Exchange Solutions
@@ -204,7 +323,7 @@ function Main() {
             </div>
             <div className="place-items-center grid">
               <img
-                className="h-[45rem] w-[90%] rounded-[50%]"
+                className="h-[45rem] rounded-[50%]"
                 src={Bill}
                 alt="Bill"
               />
