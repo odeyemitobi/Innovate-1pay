@@ -6,7 +6,7 @@ function NavBar() {
     <div className="w-full fixed z-20">
       <nav className="floated active">
         <div className="w-full justify-center flex">
-          <img className="h-[7rem] " src={Ino} alt="Ino" />
+          <img className="h-[5rem] " src={Ino} alt="Ino" />
         </div>
       </nav>
     </div>
