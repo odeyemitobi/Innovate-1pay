@@ -211,16 +211,18 @@ function Main() {
             </div>
           </div>
         </div>
+
         <div className="pt-[9rem]">
           <div className="bg-blue-900">
             <div className="place-items-center text-center grid h-[40vh]">
-              <p className="sm:text-[3rem] text-white text-xl">
+              <p className="sm:text-5xl text-white text-xl">
                 Your business and institutional needs <br /> are made easy with
                 Innovate1pay
               </p>
             </div>
           </div>
         </div>
+
         <div className="pt-[9rem] bg-neutral-100">
           <div className="">
             <div className="text-center">
@@ -230,7 +232,10 @@ function Main() {
             </div>
             <div className="w-full flex pt-[4rem] justify-between">
               {services?.map((service) => (
-                <div key={service.id} className="w-full text-center flex flex-col items-center">
+                <div
+                  key={service.id}
+                  className="w-full text-center flex flex-col items-center"
+                >
                   <div className="place-items-center grid sm:block hidden">
                     {service.smImage}
                   </div>
@@ -251,7 +256,8 @@ function Main() {
             </div>
           </div>
         </div>
-        <div className="sm:pt-[12rem] pt-[8rem] sm:pb-[14rem] pb-[10rem] bg-[#f0f8ff]">
+
+        <div className="sm:pt-[12rem] pt-[8rem] lg:px-[18rem] md:px-12 px-8 sm:pb-[14rem] pb-[10rem] bg-[#f0f8ff]">
           <div className="">
             <div className="text-center flex justify-between items-center">
               <div className="sm:block hidden">
@@ -314,28 +320,26 @@ function Main() {
             </div>
           </div>
         </div>
+
         <div className="map">
-          <div className="py-[7rem] flex justify-between">
+          <div className="py-[7rem] lg:px-[18rem] md:px-24 px-2 grid grid-cols-2 justify-between">
             <div className="w-[30%] text-left place-items-center grid">
               <h1 className="text-[4rem]">
                 Holistic Foreign Exchange Solutions
               </h1>
             </div>
             <div className="place-items-center grid">
-              <img
-                className="h-[45rem] rounded-[50%]"
-                src={Bill}
-                alt="Bill"
-              />
+              <img className="h-[45rem] rounded-[50%]" src={Bill} alt="Bill" />
             </div>
           </div>
         </div>
+
         <div className="w-full bg-neutral-200">
-          <div className="py-[9rem] px-[18rem]">
+          <div className="py-[9rem] lg:px-[18rem] md:px-16 px-2 ">
             <div className="text-center">
               <h1 className="text-3xl font-semibold">WHY TRUST US</h1>
             </div>
-            <div className="pt-[8rem] flex justify-between">
+            <div className="pt-[8rem] sm:grid sm:grid-cols-2 grid justify-between">
               <div className="w-full px-8">
                 <div className="w-[80%] border-b border-[#9B9B9B] pb-[3rem]">
                   <div className="flex items-center">
@@ -414,8 +418,9 @@ function Main() {
             </div>
           </div>
         </div>
+
         <div className="w-full">
-          <div className="py-[9rem] px-[18rem]">
+          <div className="py-[9rem]">
             <div className="text-center">
               <h1 className="text-3xl font-semibold">OUR PARTNERS</h1>
             </div>
@@ -457,10 +462,11 @@ function Main() {
             </div>
           </div>
         </div>
+
         <div className="w-full bg-blue-950">
-          <div className="py-[6rem] px-[18rem] flex justify-between">
-            <div className="">
-              <div className=" place-items-center grid">
+          <div className="py-[6rem] lg:px-[18rem] md:px-16 px-2 sm:grid sm:grid-cols-3 grid md:justify-between">
+            <div className="items-center">
+              <div className="">
                 <img className="h-[9rem]" src={Ino} alt="Ino" />
               </div>
               <div className="flex items-center">
@@ -490,14 +496,15 @@ function Main() {
                 No. 5, Onitsha Crescent, <br /> Garki, Abuja.
               </p>
             </div>
-            <div className="text-center text-white">
+            <div className="text-center text-white md:pt-1 pt-20">
               <p className="text-xl">Terms & Condition</p>
               <p className="text-xl pt-3 leading-[2.5rem]">Policy</p>
             </div>
           </div>
         </div>
+
         <div className="border-t-2 bg-blue-950 border-[#9B9B9B]">
-          <div className="px-[18rem]">
+          <div className="">
             <div className="text-center place-items-center grid h-[8vh]">
               <h1 className="text-xl text-white">
                 @ copyright 2023 innovate1pay
